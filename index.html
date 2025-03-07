@@ -36,6 +36,66 @@
   /* margin: 0 auto; /* Center the section */
   /*padding: 20px;*/
 /*.}*/
+	    .skills-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.circle-container {
+    text-align: center;
+    width: 120px;
+    margin: 10px;
+}
+
+.circle-bg {
+    fill: none;
+    stroke: #e0e0e0;
+    stroke-width: 10;
+}
+
+.circle-fg {
+    fill: none;
+    stroke: #4caf50;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 1s ease;
+}
+
+.skill-percentage {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.skill-list {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    font-size: 12px;
+    text-align: left;
+    color: #4caf50;
+}
+
+.skill-list li {
+    margin: 5px 0;
+}
+
+.circle-fg {
+    transition: stroke-dashoffset 1s ease;
+}
+
+.circle-container p {
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 .skill {
   /*margin: 8px 0;  Reduce the margin between skill bars */
@@ -166,8 +226,187 @@
           <section id="skills">
 									<span class="icon solid featured fa-code"></span>
 								<h3>Languages & Tools</h3>
+		  
+        <div class="circle-container">
+            <svg class="circle" width="100" height="100">
+                <circle class="circle-bg" cx="50" cy="50" r="45" />
+                <circle class="circle-fg" cx="50" cy="50" r="45" stroke-dasharray="282.74" stroke-dashoffset="28.274" />
+            </svg>
+            <p class="skill-percentage">90%</p>
+            <ul class="skill-list">
+                <li>Python</li>
+                <li>TF2/Keras</li>
+                <li>Pandas</li>
+            </ul>
+        </div>
+
+        <div class="circle-container">
+            <svg class="circle" width="100" height="100">
+                <circle class="circle-bg" cx="50" cy="50" r="45" />
+                <circle class="circle-fg" cx="50" cy="50" r="45" stroke-dasharray="282.74" stroke-dashoffset="42.411" />
+            </svg>
+            <p class="skill-percentage">85%</p>
+            <ul class="skill-list">
+                <li>SQL</li>
+                <li>Git</li>
+                <li>R</li>
+                <li>Scikit-Learn</li>
+            </ul>
+        </div>
+
+        <div class="circle-container">
+            <svg class="circle" width="100" height="100">
+                <circle class="circle-bg" cx="50" cy="50" r="45" />
+                <circle class="circle-fg" cx="50" cy="50" r="45" stroke-dasharray="282.74" stroke-dashoffset="56.548" />
+            </svg>
+            <p class="skill-percentage">80%</p>
+            <ul class="skill-list">
+                <li>Excel</li>
+                <li>OpenCV</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Data Visualization -->
+    <section id="data-visualization">
+        <h3>Data Visualization</h3>
+
+        <div class="circle-container">
+            <svg class="circle" width="100" height="100">
+                <circle class="circle-bg" cx="50" cy="50" r="45" />
+                <circle class="circle-fg" cx="50" cy="50" r="45" stroke-dasharray="282.74" stroke-dashoffset="42.411" />
+            </svg>
+            <p class="skill-percentage">85%</p>
+            <ul class="skill-list">
+                <li>Matplotlib</li>
+                <li>Tableau</li>
+            </ul>
+        </div>
+
+        <div class="circle-container">
+            <svg class="circle" width="100" height="100">
+                <circle class="circle-bg" cx="50" cy="50" r="45" />
+                <circle class="circle-fg" cx="50" cy="50" r="45" stroke-dasharray="282.74" stroke-dashoffset="60.194" />
+            </svg>
+            <p class="skill-percentage">78%</p>
+            <ul class="skill-list">
+                <li>PowerBI</li>
+            </ul>
+        </div>
+
+        <div class="circle-container">
+            <svg class="circle" width="100" height="100">
+                <circle class="circle-bg" cx="50" cy="50" r="45" />
+                <circle class="circle-fg" cx="50" cy="50" r="45" stroke-dasharray="282.74" stroke-dashoffset="69.52" />
+            </svg>
+            <p class="skill-percentage">75%</p>
+            <ul class="skill-list">
+                <li>Seaborn</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Cloud Technologies -->
+    <section id="cloud-technologies">
+        <h3>Cloud Technologies</h3>
+
+        <div class="circle-container">
+            <svg class="circle" width="100" height="100">
+                <circle class="circle-bg" cx="50" cy="50" r="45" />
+                <circle class="circle-fg" cx="50" cy="50" r="45" stroke-dasharray="282.74" stroke-dashoffset="28.274" />
+            </svg>
+            <p class="skill-percentage">90%</p>
+            <ul class="skill-list">
+                <li>Google Cloud</li>
+            </ul>
+        </div>
+
+        <div class="circle-container">
+            <svg class="circle" width="100" height="100">
+                <circle class="circle-bg" cx="50" cy="50" r="45" />
+                <circle class="circle-fg" cx="50" cy="50" r="45" stroke-dasharray="282.74" stroke-dashoffset="42.411" />
+            </svg>
+            <p class="skill-percentage">85%</p>
+            <ul class="skill-list">
+                <li>AWS</li>
+                <li>Snowflake</li>
+            </ul>
+        </div>
+
+        <div class="circle-container">
+            <svg class="circle" width="100" height="100">
+                <circle class="circle-bg" cx="50" cy="50" r="45" />
+                <circle class="circle-fg" cx="50" cy="50" r="45" stroke-dasharray="282.74" stroke-dashoffset="51.66" />
+            </svg>
+            <p class="skill-percentage">82%</p>
+            <ul class="skill-list">
+                <li>Azure</li>
+            </ul>
+        </div>
+
+        <div class="circle-container">
+            <svg class="circle" width="100" height="100">
+                <circle class="circle-bg" cx="50" cy="50" r="45" />
+                <circle class="circle-fg" cx="50" cy="50" r="45" stroke-dasharray="282.74" stroke-dashoffset="63.5" />
+            </svg>
+            <p class="skill-percentage">80%</p>
+            <ul class="skill-list">
+                <li>Spark</li>
+            </ul>
+        </div>
+
+        <div class="circle-container">
+            <svg class="circle" width="100" height="100">
+                <circle class="circle-bg" cx="50" cy="50" r="45" />
+                <circle class="circle-fg" cx="50" cy="50" r="45" stroke-dasharray="282.74" stroke-dashoffset="65.474" />
+            </svg>
+            <p class="skill-percentage">78%</p>
+            <ul class="skill-list">
+                <li>Hadoop</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Algorithms -->
+    <section id="algorithms">
+        <h3>Algorithms</h3>
+
+        <div class="circle-container">
+            <svg class="circle" width="100" height="100">
+                <circle class="circle-bg" cx="50" cy="50" r="45" />
+                <circle class="circle-fg" cx="50" cy="50" r="45" stroke-dasharray="282.74" stroke-dashoffset="28.274" />
+            </svg>
+            <p class="skill-percentage">90%</p>
+            <ul class="skill-list">
+                <li>Data Cleaning</li>
+                <li>Classification</li>
+            </ul>
+        </div>
+
+        <div class="circle-container">
+            <svg class="circle" width="100" height="100">
+                <circle class="circle-bg" cx="50" cy="50" r="45" />
+                <circle class="circle-fg" cx="50" cy="50" r="45" stroke-dasharray="282.74" stroke-dashoffset="42.411" />
+            </svg>
+            <p class="skill-percentage">85%</p>
+            <ul class="skill-list">
+                <li>Data Preprocessing</li>
+                <li>Regression</li>
+            </ul>
+        </div>
+
+        <div class="circle-container">
+            <svg class="circle" width="100" height="100">
+                <circle class="circle-bg" cx="50" cy="50" r="45" />
+                <circle class="circle-fg" cx="50" cy="50" r="45" stroke-dasharray="282.74" stroke-dashoffset="56.548" />
+            </svg>
+            <p class="skill-percentage">80%</p>
+            <ul class="skill-list">
+                <li>Forecasting</li>
+            </ul>
+        </div>
 			
-     
+     <!--
 	     
     <div class="skill">
       <p>Python</p>
@@ -311,7 +550,7 @@
 
 	
 									</section>
-								 </div>
+								 </div>-->
 										<!-- <p style="text-align: justify; max-width: 800px; font-family: Verdana, Arial, sans-serif;font-size: 14px; line-height: 1.6;"> 
 						<span class="fa fa-code"></span> <strong>Python</strong> <strong>R</strong> <strong>SQL</strong> <strong>Excel</strong> <strong>TensorFlow</strong> <strong>Keras</strong> <strong>Scikit-Learn</strong> <strong>Pandas</strong> <strong>Git</strong> <strong>OpenCV</strong> 
 						<span class="fa fa-chart-bar"></span> <strong>Tableau</strong> <strong>PowerBI</strong> <strong>Matplotlib</strong> <strong>Seaborn</strong>
