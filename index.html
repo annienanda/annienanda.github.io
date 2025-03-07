@@ -45,20 +45,57 @@
   font-size: 14px; /* Reduce font size */
 }
 
+
+/* Ensure the columns stack horizontally in larger screens */
+.row {
+  display: flex;
+  justify-content: space-between; /* To ensure there's space between columns */
+  flex-wrap: wrap; /* Allow wrapping if necessary */
+}
+
+/* Adjust column width in different screen sizes */
+.col-4 {
+  width: 30%; /* 3 columns per row */
+  margin-right: 10px;
+}
+
+.col-6-medium {
+  width: 45%; /* For medium screens, 2 columns per row */
+  margin-right: 10px;
+}
+
+.col-12-small {
+  width: 100%; /* For small screens, full width for each column */
+  margin-right: 0;
+}
+
 .skill-bar {
-  width: 0;
-  height: 15px; /* Reduce height of the skill bar */
+  width: 0%;
+  height: 15px;
   background-color: #4caf50;
   border-radius: 5px;
   transition: width 2s ease-in-out;
-  flex-grow: 1;
-  margin-right: 10px; /* Add spacing between the bar and the percentage */
+  margin-bottom: 5px;
 }
 
 .skill-percent {
   font-weight: bold;
-  font-size: 14px; /* Reduce the font size */
+  margin-left: 10px;
+  display: inline-block;
 }
+
+/* Make sure everything looks aligned and responsive */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column; /* Stack vertically on smaller screens */
+  }
+  
+  .col-4, .col-6-medium {
+    width: 100%;
+    margin-bottom: 20px; /* Space between rows */
+  }
+}
+
 .skill p {
   margin: 0 0 5px;
 	 font-size: 16px; /* Reduce font size of titles */
