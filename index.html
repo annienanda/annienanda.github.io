@@ -225,7 +225,7 @@
 			</article>
 <!-- Skill -->
 			
-						<meta charset="UTF-8">
+						  <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills Progress</title>
     <style>
@@ -242,8 +242,8 @@
 
         .skill {
             position: relative;
-            width: 120px;
-            height: 120px;
+            width: 160px;
+            height: 160px;
             margin: 20px;
             text-align: center;
         }
@@ -272,22 +272,23 @@
 
         .skill-percentage {
             position: absolute;
-            top: 40%;
+            top: 35%;
             width: 100%;
-            font-size: 18px;
+            font-size: 20px;
             font-weight: bold;
             color: #333;
         }
 
         .skill-list {
-            margin-top: 10px;
+            margin-top: 15px;
             list-style: none;
             padding: 0;
+            font-size: 14px;
+            color: #555;
         }
 
         .skill-list li {
-            font-size: 14px;
-            color: #555;
+            margin-bottom: 5px;
         }
 
         /* Skill Colors */
@@ -357,12 +358,6 @@
             stroke-dashoffset: 47.1; /* 85% */
         }
 
-        .snowflake .circle-fg {
-            stroke: #00aaff;
-            stroke-dasharray: 314;
-            stroke-dashoffset: 56.2; /* 82% */
-        }
-
         .azure .circle-fg {
             stroke: #007bff;
             stroke-dasharray: 314;
@@ -380,7 +375,7 @@
             stroke-dasharray: 314;
             stroke-dashoffset: 69.1; /* 78% */
         }
-    </style>
+	     </style>
 		<article id="skill" class="wrapper style2">
 				<div class="container">
 					<header>
@@ -399,6 +394,17 @@
             <li>Python</li>
             <li>TF2/Keras</li>
             <li>Pandas</li>
+        </ul>
+    </div>
+
+    <div class="skill tensorflow">
+        <svg class="circle" viewBox="0 0 120 120">
+            <circle class="circle-bg" cx="60" cy="60" r="50"></circle>
+            <circle class="circle-fg" cx="60" cy="60" r="50"></circle>
+        </svg>
+        <p class="skill-percentage">85%</p>
+        <ul class="skill-list">
+            <li>TensorFlow</li>
         </ul>
     </div>
 
@@ -495,6 +501,9 @@
             <li>Hadoop</li>
         </ul>
     </div>
+
+</section>
+
 
 
 					 <!--<div class="row aln-center">
