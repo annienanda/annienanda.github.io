@@ -225,35 +225,160 @@
 			</article>
 <!-- Skill -->
 			
-						 <meta charset="UTF-8">
+						<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills Progress</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
-        .progress-container {
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .skill-section {
             display: flex;
             justify-content: space-around;
+            flex-wrap: wrap;
             margin-top: 20px;
         }
-        .progress-bar {
-            width: 150px;
-            height: 150px;
+
+        .skill {
             position: relative;
-            border-radius: 50%;
-            background: conic-gradient(#4caf50 var(--progress), #ddd var(--progress) 100%);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #333;
+            width: 120px;
+            height: 120px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .circle {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform: rotate(-90deg);
+        }
+
+        .circle-bg {
+            fill: none;
+            stroke: #e6e6e6;
+            stroke-width: 10;
+        }
+
+        .circle-fg {
+            fill: none;
+            stroke-width: 10;
+            stroke-linecap: round;
+            transition: stroke-dashoffset 1s ease;
+        }
+
+        .skill-percentage {
+            position: absolute;
+            top: 40%;
+            width: 100%;
             font-size: 18px;
             font-weight: bold;
+            color: #333;
         }
-        .skill-label {
-            position: absolute;
-            top: 65%;
-            left: 50%;
-            transform: translateX(-50%) translateY(-50%);
-            font-size: 16px;
+
+        .skill-list {
+            margin-top: 10px;
+            list-style: none;
+            padding: 0;
+        }
+
+        .skill-list li {
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Skill Colors */
+        .python .circle-fg {
+            stroke: #4caf50;
+            stroke-dasharray: 314;
+            stroke-dashoffset: 47.1; /* 90% */
+        }
+
+        .tensorflow .circle-fg {
+            stroke: #ff5722;
+            stroke-dasharray: 314;
+            stroke-dashoffset: 47.1; /* 85% */
+        }
+
+        .sql .circle-fg {
+            stroke: #2196f3;
+            stroke-dasharray: 314;
+            stroke-dashoffset: 47.1; /* 85% */
+        }
+
+        .excel .circle-fg {
+            stroke: #f39c12;
+            stroke-dasharray: 314;
+            stroke-dashoffset: 62.8; /* 80% */
+        }
+
+        .opencv .circle-fg {
+            stroke: #8e44ad;
+            stroke-dasharray: 314;
+            stroke-dashoffset: 62.8; /* 80% */
+        }
+
+        .matplotlib .circle-fg {
+            stroke: #9b59b6;
+            stroke-dasharray: 314;
+            stroke-dashoffset: 47.1; /* 85% */
+        }
+
+        .tableau .circle-fg {
+            stroke: #e91e63;
+            stroke-dasharray: 314;
+            stroke-dashoffset: 47.1; /* 85% */
+        }
+
+        .powerbi .circle-fg {
+            stroke: #f39c12;
+            stroke-dasharray: 314;
+            stroke-dashoffset: 60.194; /* 78% */
+        }
+
+        .seaborn .circle-fg {
+            stroke: #3498db;
+            stroke-dasharray: 314;
+            stroke-dashoffset: 78.5; /* 75% */
+        }
+
+        .gcp .circle-fg {
+            stroke: #00bcd4;
+            stroke-dasharray: 314;
+            stroke-dashoffset: 31.4; /* 90% */
+        }
+
+        .aws .circle-fg {
+            stroke: #ff9800;
+            stroke-dasharray: 314;
+            stroke-dashoffset: 47.1; /* 85% */
+        }
+
+        .snowflake .circle-fg {
+            stroke: #00aaff;
+            stroke-dasharray: 314;
+            stroke-dashoffset: 56.2; /* 82% */
+        }
+
+        .azure .circle-fg {
+            stroke: #007bff;
+            stroke-dasharray: 314;
+            stroke-dashoffset: 62.8; /* 80% */
+        }
+
+        .spark .circle-fg {
+            stroke: #ff5722;
+            stroke-dasharray: 314;
+            stroke-dashoffset: 62.8; /* 80% */
+        }
+
+        .hadoop .circle-fg {
+            stroke: #f39c12;
+            stroke-dasharray: 314;
+            stroke-dashoffset: 69.1; /* 78% */
         }
     </style>
 		<article id="skill" class="wrapper style2">
@@ -262,35 +387,115 @@
 						<h2>Technical Proficiency & Expertise</h2>
 						<p>Bridging code, data, and intelligence to drive impactful solutions.</p>
 					</header>
-					<div class="progress-container">
-    <div class="progress-bar" style="--progress: 90%" data-skill="Python">
-        <div class="skill-label">Python</div>
-    </div>
-    <div class="progress-bar" style="--progress: 80%" data-skill="R">
-        <div class="skill-label">R</div>
-    </div>
-    <div class="progress-bar" style="--progress: 75%" data-skill="SQL">
-        <div class="skill-label">SQL</div>
-    </div>
-    <div class="progress-bar" style="--progress: 85%" data-skill="TensorFlow">
-        <div class="skill-label">TensorFlow</div>
-    </div>
-</div>
+					<section class="skill-section">
 
-<div class="progress-container">
-    <div class="progress-bar" style="--progress: 70%" data-skill="Keras">
-        <div class="skill-label">Keras</div>
+    <div class="skill python">
+        <svg class="circle" viewBox="0 0 120 120">
+            <circle class="circle-bg" cx="60" cy="60" r="50"></circle>
+            <circle class="circle-fg" cx="60" cy="60" r="50"></circle>
+        </svg>
+        <p class="skill-percentage">90%</p>
+        <ul class="skill-list">
+            <li>Python</li>
+            <li>TF2/Keras</li>
+            <li>Pandas</li>
+        </ul>
     </div>
-    <div class="progress-bar" style="--progress: 60%" data-skill="Git">
-        <div class="skill-label">Git</div>
+
+    <div class="skill sql">
+        <svg class="circle" viewBox="0 0 120 120">
+            <circle class="circle-bg" cx="60" cy="60" r="50"></circle>
+            <circle class="circle-fg" cx="60" cy="60" r="50"></circle>
+        </svg>
+        <p class="skill-percentage">85%</p>
+        <ul class="skill-list">
+            <li>SQL</li>
+            <li>Git</li>
+            <li>R</li>
+            <li>Scikit-Learn</li>
+        </ul>
     </div>
-    <div class="progress-bar" style="--progress: 95%" data-skill="Tableau">
-        <div class="skill-label">Tableau</div>
+
+    <div class="skill excel">
+        <svg class="circle" viewBox="0 0 120 120">
+            <circle class="circle-bg" cx="60" cy="60" r="50"></circle>
+            <circle class="circle-fg" cx="60" cy="60" r="50"></circle>
+        </svg>
+        <p class="skill-percentage">80%</p>
+        <ul class="skill-list">
+            <li>Excel</li>
+            <li>OpenCV</li>
+        </ul>
     </div>
-    <div class="progress-bar" style="--progress: 90%" data-skill="AWS">
-        <div class="skill-label">AWS</div>
+
+    <div class="skill matplotlib">
+        <svg class="circle" viewBox="0 0 120 120">
+            <circle class="circle-bg" cx="60" cy="60" r="50"></circle>
+            <circle class="circle-fg" cx="60" cy="60" r="50"></circle>
+        </svg>
+        <p class="skill-percentage">85%</p>
+        <ul class="skill-list">
+            <li>Matplotlib</li>
+            <li>Tableau</li>
+        </ul>
     </div>
-</div>
+
+    <div class="skill powerbi">
+        <svg class="circle" viewBox="0 0 120 120">
+            <circle class="circle-bg" cx="60" cy="60" r="50"></circle>
+            <circle class="circle-fg" cx="60" cy="60" r="50"></circle>
+        </svg>
+        <p class="skill-percentage">78%</p>
+        <ul class="skill-list">
+            <li>PowerBI</li>
+        </ul>
+    </div>
+
+    <div class="skill seaborn">
+        <svg class="circle" viewBox="0 0 120 120">
+            <circle class="circle-bg" cx="60" cy="60" r="50"></circle>
+            <circle class="circle-fg" cx="60" cy="60" r="50"></circle>
+        </svg>
+        <p class="skill-percentage">75%</p>
+        <ul class="skill-list">
+            <li>Seaborn</li>
+        </ul>
+    </div>
+
+    <div class="skill gcp">
+        <svg class="circle" viewBox="0 0 120 120">
+            <circle class="circle-bg" cx="60" cy="60" r="50"></circle>
+            <circle class="circle-fg" cx="60" cy="60" r="50"></circle>
+        </svg>
+        <p class="skill-percentage">90%</p>
+        <ul class="skill-list">
+            <li>GCP</li>
+        </ul>
+    </div>
+
+    <div class="skill aws">
+        <svg class="circle" viewBox="0 0 120 120">
+            <circle class="circle-bg" cx="60" cy="60" r="50"></circle>
+            <circle class="circle-fg" cx="60" cy="60" r="50"></circle>
+        </svg>
+        <p class="skill-percentage">85%</p>
+        <ul class="skill-list">
+            <li>AWS</li>
+            <li>Snowflake</li>
+        </ul>
+    </div>
+
+    <div class="skill hadoop">
+        <svg class="circle" viewBox="0 0 120 120">
+            <circle class="circle-bg" cx="60" cy="60" r="50"></circle>
+            <circle class="circle-fg" cx="60" cy="60" r="50"></circle>
+        </svg>
+        <p class="skill-percentage">78%</p>
+        <ul class="skill-list">
+            <li>Hadoop</li>
+        </ul>
+    </div>
+
 
 					 <!--<div class="row aln-center">
       <div class="col-4 col-6-medium col-12-small">
