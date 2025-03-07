@@ -32,24 +32,37 @@
         }
 	 /* Skills Style */
 	    .skills {
-  width: 100%;
+  width: 70%; /* Reduce width of the skill section */
+  margin: 0 auto; /* Center the section */
   padding: 20px;
 }
 
 .skill {
-  margin: 10px 0;
+  margin: 8px 0; /* Reduce the margin between skill bars */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px; /* Reduce font size */
 }
 
 .skill-bar {
   width: 0;
-  height: 25px;
+  height: 15px; /* Reduce height of the skill bar */
   background-color: #4caf50;
   border-radius: 5px;
   transition: width 2s ease-in-out;
+  flex-grow: 1;
+  margin-right: 10px; /* Add spacing between the bar and the percentage */
 }
 
+.skill-percent {
+  font-weight: bold;
+  font-size: 14px; /* Reduce the font size */
+}
 .skill p {
   margin: 0 0 5px;
+	 font-size: 16px; /* Reduce font size of titles */
+  flex-basis: 100px; /* Give fixed space to skill titles */
 }
 
 .skill-bar[data-skill="90"] {
@@ -140,9 +153,9 @@
 						<h2>My Journey: Skills, Experience & Education</h2>
 						<p>A blend of technical expertise, research innovation, and real-world applications.</p>
 					</header>
-					<!-- <div class="row aln-center">
+					 <div class="row aln-center">
 						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1"> -->
+							<section class="box style1"> 
 								
 								<section id="skills">
 									<span class="icon solid featured fa-cogs"></span>
@@ -151,83 +164,83 @@
      <div class="skills">
     <div class="skill">
       <p>Python</p>
-      <div class="skill-bar" data-skill="90"></div>
+      <div class="skill-bar" data-skill="90"></div><span class="skill-percent">90%</span>
     </div>
     <div class="skill">
       <p>R</p>
-      <div class="skill-bar" data-skill="75"></div>
+      <div class="skill-bar" data-skill="75"></div><span class="skill-percent">75%</span>
     </div>
     <div class="skill">
       <p>SQL</p>
-      <div class="skill-bar" data-skill="85"></div>
+      <div class="skill-bar" data-skill="85"></div><span class="skill-percent">85%</span>
     </div>
     <div class="skill">
       <p>Excel</p>
-      <div class="skill-bar" data-skill="70"></div>
+      <div class="skill-bar" data-skill="70"></div><span class="skill-percent">70%</span>
     </div>
     <div class="skill">
       <p>TensorFlow</p>
-      <div class="skill-bar" data-skill="90"></div>
+      <div class="skill-bar" data-skill="90"></div><span class="skill-percent">90%</span>
     </div>
     <div class="skill">
       <p>Keras</p>
-      <div class="skill-bar" data-skill="80"></div>
+      <div class="skill-bar" data-skill="90"></div><span class="skill-percent">90%</span>
     </div>
     <div class="skill">
       <p>Scikit-Learn</p>
-      <div class="skill-bar" data-skill="85"></div>
+      <div class="skill-bar" data-skill="85"></div><span class="skill-percent">85%</span>
     </div>
     <div class="skill">
       <p>Pandas</p>
-      <div class="skill-bar" data-skill="90"></div>
+      <div class="skill-bar" data-skill="90"></div><span class="skill-percent">90%</span>
     </div>
     <div class="skill">
       <p>Git</p>
-      <div class="skill-bar" data-skill="85"></div>
+      <div class="skill-bar" data-skill="85"></div><span class="skill-percent">85%</span>
     </div>
     <div class="skill">
       <p>OpenCV</p>
-      <div class="skill-bar" data-skill="80"></div>
+      <div class="skill-bar" data-skill="80"></div><span class="skill-percent">80%</span>
     </div>
     <div class="skill">
       <p>Tableau</p>
-      <div class="skill-bar" data-skill="70"></div>
+      <div class="skill-bar" data-skill="70"></div><span class="skill-percent">70%</span>
     </div>
     <div class="skill">
       <p>PowerBI</p>
-      <div class="skill-bar" data-skill="65"></div>
+      <div class="skill-bar" data-skill="65"></div><span class="skill-percent">65%</span>
     </div>
     <div class="skill">
       <p>Matplotlib</p>
-      <div class="skill-bar" data-skill="85"></div>
+      <div class="skill-bar" data-skill="85"></div><span class="skill-percent">85%</span>
     </div>
     <div class="skill">
       <p>Seaborn</p>
-      <div class="skill-bar" data-skill="80"></div>
+      <div class="skill-bar" data-skill="80"></div><span class="skill-percent">80%</span>
     </div>
     <div class="skill">
       <p>Data Cleaning</p>
-      <div class="skill-bar" data-skill="90"></div>
+      <div class="skill-bar" data-skill="90"></div><span class="skill-percent">90%</span>
     </div>
     <div class="skill">
       <p>Data Preprocessing</p>
-      <div class="skill-bar" data-skill="85"></div>
+      <div class="skill-bar" data-skill="85"></div><span class="skill-percent">85%</span>
     </div>
     <div class="skill">
       <p>Regression</p>
-      <div class="skill-bar" data-skill="85"></div>
+      <div class="skill-bar" data-skill="85"></div><span class="skill-percent">85%</span>
     </div>
     <div class="skill">
       <p>Classification</p>
-      <div class="skill-bar" data-skill="90"></div>
+      <div class="skill-bar" data-skill="90"></div><span class="skill-percent">90%</span>
     </div>
     <div class="skill">
       <p>Clustering</p>
-      <div class="skill-bar" data-skill="75"></div>
+      <div class="skill-bar" data-skill="75"></div><span class="skill-percent">75%</span>
     </div>
     <div class="skill">
       <p>Forecasting</p>
-      <div class="skill-bar" data-skill="80"></div>
+      <div class="skill-bar" data-skill="80"></div><span class="skill-percent">80%</span>
     </div>
   </div>
 	</section>			<!-- <p style="text-align: justify; max-width: 800px; font-family: Verdana, Arial, sans-serif;font-size: 14px; line-height: 1.6;"> 
@@ -235,9 +248,9 @@
 						<span class="fa fa-chart-bar"></span> <strong>Tableau</strong> <strong>PowerBI</strong> <strong>Matplotlib</strong> <strong>Seaborn</strong>
    <span class="fa fa-chart-line"></span> <strong>Data-Cleaning</strong> <strong>Data-Preprocessing</strong> <strong>Regression</strong> <strong>Classification</strong> <strong>Clustering</strong> <strong>Forecasting</strong><br>
     <span class="fa fa-database"></span> <strong>Hadoop</strong> <strong>Spark</strong> <strong>Snowflake</strong> <strong>Google Cloud</strong> <strong>Azure</strong> <strong>AWS</strong></p>
-   			
+   			-->
 							</section>
-						</div> -->
+						</div> 
 						<div class="col-4 col-6-medium col-12-small">
 							<section class="box style1">
 								<span class="icon solid featured fa-briefcase"></span>
