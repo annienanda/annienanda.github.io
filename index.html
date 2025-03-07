@@ -472,9 +472,12 @@
 			<script src="assets/js/main.js"></script>
 		       <script> document.addEventListener("DOMContentLoaded", function() {
   const skillBars = document.querySelectorAll(".skill-bar");
-  skillBars.forEach(function(bar) {
-    const skillValue = bar.getAttribute("data-skill");
-    bar.style.width = skillValue + "%";
+  const skillPercentages = document.querySelectorAll(".skill-percent");
+
+  skillBars.forEach(function(bar, index) {
+    const skillValue = bar.getAttribute("data-skill");  // Get the percentage value from the data-skill attribute
+    bar.style.width = skillValue + "%";  // Set the width based on the skill percentage
+    skillPercentages[index].textContent = `${skillValue}%`;  // Display the percentage next to the bar
   });
 }); </script>
 
