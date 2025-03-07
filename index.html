@@ -456,6 +456,13 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+		       <script> document.addEventListener("DOMContentLoaded", function() {
+  const skillBars = document.querySelectorAll(".skill-bar");
+  skillBars.forEach(function(bar) {
+    const skillValue = bar.getAttribute("data-skill");
+    bar.style.width = skillValue + "%";
+  });
+}); </script>
 
 	</body>
 </html>
