@@ -30,6 +30,47 @@
         .blinking-badge {
             animation: blink 1s infinite;
         }
+	    .skills {
+  width: 100%;
+  padding: 20px;
+}
+
+.skill {
+  margin: 10px 0;
+}
+
+.skill-bar {
+  width: 0;
+  height: 25px;
+  background-color: #4caf50;
+  border-radius: 5px;
+  transition: width 2s ease-in-out;
+}
+
+.skill h3 {
+  margin: 0 0 5px;
+}
+
+.skill-bar[data-skill="90"] {
+  background-color: #ff9800;
+}
+
+.skill-bar[data-skill="80"] {
+  background-color: #2196f3;
+}
+
+.skill-bar[data-skill="75"] {
+  background-color: #9c27b0;
+}
+
+.skill-bar[data-skill="70"] {
+  background-color: #00bcd4;
+}
+
+.skill-bar[data-skill="65"] {
+  background-color: #f44336;
+}
+
     </style>
 	</head>
 	<body class="is-preload">
@@ -103,7 +144,7 @@
 							<section class="box style1">
 								<span class="icon solid featured fa-cogs"></span>
 								<h3>Skills </h3>
-			<p style="text-align: justify; max-width: 800px; font-family: Verdana, Arial, sans-serif;font-size: 14px; line-height: 1.6;"> <span class="fa fa-code"></span> <strong>Python</strong> <strong>R</strong> <strong>SQL</strong> <strong>Excel</strong> <strong>TensorFlow</strong> <strong>Keras</strong> <strong>Scikit-Learn</strong> <strong>Pandas</strong> <strong>Git</strong> <strong>OpenCV</strong>
+			<p style="text-align: justify; max-width: 800px; font-family: Verdana, Arial, sans-serif;font-size: 14px; line-height: 1.6;"> 
      div class="skills">
     <div class="skill">
       <h3>Python</h3>
@@ -186,7 +227,8 @@
       <div class="skill-bar" data-skill="80"></div>
     </div>
   </div>
-				<!--<span class="fa fa-chart-bar"></span> <strong>Tableau</strong> <strong>PowerBI</strong> <strong>Matplotlib</strong> <strong>Seaborn</strong>
+				<!--<span class="fa fa-code"></span> <strong>Python</strong> <strong>R</strong> <strong>SQL</strong> <strong>Excel</strong> <strong>TensorFlow</strong> <strong>Keras</strong> <strong>Scikit-Learn</strong> <strong>Pandas</strong> <strong>Git</strong> <strong>OpenCV</strong> 
+						<span class="fa fa-chart-bar"></span> <strong>Tableau</strong> <strong>PowerBI</strong> <strong>Matplotlib</strong> <strong>Seaborn</strong>
    <span class="fa fa-chart-line"></span> <strong>Data-Cleaning</strong> <strong>Data-Preprocessing</strong> <strong>Regression</strong> <strong>Classification</strong> <strong>Clustering</strong> <strong>Forecasting</strong><br>
     <span class="fa fa-database"></span> <strong>Hadoop</strong> <strong>Spark</strong> <strong>Snowflake</strong> <strong>Google Cloud</strong> <strong>Azure</strong> <strong>AWS</strong></p>
    			 -->
