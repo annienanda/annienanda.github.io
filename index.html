@@ -87,7 +87,7 @@
 }
 
 .skill:nth-child(3) .circle-fg {
-    stroke: #FFEB3B; /* Yellow for 80% */
+    stroke: #2c3e50; 
 }
 
 .skill:nth-child(4) .circle-fg {
@@ -111,7 +111,7 @@
 }
 
 .skill:nth-child(3) .skill-percentage {
-    color: #FFEB3B; /* Yellow for 80% */
+    color: #2c3e50; 
 }
 
 .skill:nth-child(4) .skill-percentage {
@@ -135,7 +135,7 @@
 }
 
 .skill:nth-child(3) .skill-list li {
-    color: #FFEB3B; /* Yellow for 80% */
+    color: #2c3e50; 
 }
 
 .skill:nth-child(4) .skill-list li {
@@ -271,13 +271,15 @@
         }
 
         .skill-percentage {
-            position: absolute;
-            top: 35%;
-            width: 100%;
-            font-size: 20px;
-            font-weight: bold;
-            color: #333;
-        }
+    position: absolute;
+    top: 10%; /* Move the percentage higher */
+    left: 50%;
+    transform: translateX(-50%); /* Center the text horizontally */
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
 
         .skill-list {
             margin-top: 15px;
@@ -312,13 +314,13 @@
         }
 
         .excel .circle-fg {
-            stroke: #f39c12;
+            stroke: #2c3e50; 
             stroke-dasharray: 314;
             stroke-dashoffset: 62.8; /* 80% */
         }
 
         .opencv .circle-fg {
-            stroke: #8e44ad;
+            stroke: #2c3e50; 
             stroke-dasharray: 314;
             stroke-dashoffset: 62.8; /* 80% */
         }
