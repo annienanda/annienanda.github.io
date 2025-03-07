@@ -224,24 +224,86 @@
 				</div>
 			</article>
 <!-- Skill -->
-			<article id="skill" class="wrapper style2">
+			
+						 <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Progress</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .progress-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .progress-bar {
+            width: 150px;
+            height: 150px;
+            position: relative;
+            border-radius: 50%;
+            background: conic-gradient(#4caf50 var(--progress), #ddd var(--progress) 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .skill-label {
+            position: absolute;
+            top: 65%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            font-size: 16px;
+        }
+    </style>
+		<article id="skill" class="wrapper style2">
 				<div class="container">
 					<header>
 						<h2>Technical Proficiency & Expertise</h2>
 						<p>Bridging code, data, and intelligence to drive impactful solutions.</p>
 					</header>
+					<div class="progress-container">
+    <div class="progress-bar" style="--progress: 90%" data-skill="Python">
+        <div class="skill-label">Python</div>
+    </div>
+    <div class="progress-bar" style="--progress: 80%" data-skill="R">
+        <div class="skill-label">R</div>
+    </div>
+    <div class="progress-bar" style="--progress: 75%" data-skill="SQL">
+        <div class="skill-label">SQL</div>
+    </div>
+    <div class="progress-bar" style="--progress: 85%" data-skill="TensorFlow">
+        <div class="skill-label">TensorFlow</div>
+    </div>
+</div>
+
+<div class="progress-container">
+    <div class="progress-bar" style="--progress: 70%" data-skill="Keras">
+        <div class="skill-label">Keras</div>
+    </div>
+    <div class="progress-bar" style="--progress: 60%" data-skill="Git">
+        <div class="skill-label">Git</div>
+    </div>
+    <div class="progress-bar" style="--progress: 95%" data-skill="Tableau">
+        <div class="skill-label">Tableau</div>
+    </div>
+    <div class="progress-bar" style="--progress: 90%" data-skill="AWS">
+        <div class="skill-label">AWS</div>
+    </div>
+</div>
+
 					 <!--<div class="row aln-center">
       <div class="col-4 col-6-medium col-12-small">
         <section class="box style1"> 
           <section id="skills">
 									<span class="icon solid featured fa-code"></span>
-								<h3>Languages & Tools</h3>-->
+								<h3>Languages & Tools</h3>
 	<div class="row aln-center">				
 	<div class="skills-container">
-    <!-- Languages & Tools -->
+    <!-- Languages & Tools 
     <section id="languages-tools">
 	<span class="fa fa-code"> </span> 
-        <!--  <h3>Languages & Tools</h3>-->
+        <!--  <h3>Languages & Tools</h3>
 
         <div class="skill">
             <svg class="circle" viewBox="0 0 120 120">
@@ -286,10 +348,10 @@
         </div>
     </section>
 
-    <!-- Data Visualization -->
+    <!-- Data Visualization 
     <section id="data-visualization">
 	    <span class="fa fa-chart-bar"></span>
-    <!--    <h3>Data Visualization</h3>-->
+    <!--    <h3>Data Visualization</h3>
 
         <div class="skill">
              <svg class="circle" viewBox="0 0 120 120">
@@ -330,10 +392,10 @@
         </div>
     </section>
 
-    <!-- Cloud Technologies -->
+    <!-- Cloud Technologies 
     <section id="cloud-technologies">
 	     <span class="fa fa-cloud"></span>
-         <!-- <h3>Cloud Technologies</h3>-->
+         <!-- <h3>Cloud Technologies</h3>
 
         <div class="skill">
             <svg class="circle" viewBox="0 0 120 120">
@@ -441,7 +503,7 @@
                 </ul>
             </div>
         </div>
-    </section>-->
+    </section>
 </div>
 </div>
 			
@@ -595,8 +657,8 @@
 						<span class="fa fa-chart-bar"></span> <strong>Tableau</strong> <strong>PowerBI</strong> <strong>Matplotlib</strong> <strong>Seaborn</strong>
    <span class="fa fa-chart-line"></span> <strong>Data-Cleaning</strong> <strong>Data-Preprocessing</strong> <strong>Regression</strong> <strong>Classification</strong> <strong>Clustering</strong> <strong>Forecasting</strong><br>
     <span class="fa fa-database"></span> <strong>Hadoop</strong> <strong>Spark</strong> <strong>Snowflake</strong> <strong>Google Cloud</strong> <strong>Azure</strong> <strong>AWS</strong></p>
-   			-->
-							</section>
+   			
+							</section>-->
 						</div> 
 						 <footer>
 						
