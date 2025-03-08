@@ -269,7 +269,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 736px) {
 
 			.container {
 				width: 100%;
@@ -1260,7 +1260,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 736px) {
 
 			.row {
 				display: flex;
@@ -2264,7 +2264,7 @@ input, select, textarea {
 
 /* Small */
 
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 736px) {
 
 		/* Basic */
 
@@ -2439,7 +2439,7 @@ input, select, textarea {
                                       width: 100%;
                                       /*padding: 12px;*/
                                       /*font-size: 18px;*/ /* Increase text size for touch screens */
-				      font-size: 14px; /* Slightly smaller text */
+				      font-size: 12px; /* Slightly smaller text */
                                       padding: 8px 12px;
                         }
 
