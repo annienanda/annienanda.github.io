@@ -151,24 +151,43 @@
     transform: translateX(-50%);  /* Center the text horizontally */
     font-size: 20px;
     font-weight: bold;
-    color: #333;
+    color: inherit; 
 }
 
-        .skill-list {
-            margin-top: 15px;
-            list-style: none;
-            padding: 0;
-	    font-weight: bold;
-            font-size: 14px;
-            color: #555;
-	    text-align: center; /* Centering the text inside the list */
-            margin-left: auto;  /* Align the list horizontally in the container */
-            margin-right: auto; /* Align the list horizontally in the container */
-        }
+       .skill-list {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
         .skill-list li {
-            margin-bottom: 5px;
+            margin-bottom: 10px;
         }
+        .python .skill-list {
+    color: #4caf50;  /* Same color as Python circle */
+}
+.sql .skill-list {
+    color: #2196f3;  /* Same color as SQL circle */
+}
+	    .excel .skill-list {
+    color: #2c3e50;  /* Same color as Excel circle */
+}
+.powerbi .skill-list {
+    color: #f39c12;  /* Same color as PowerBI circle */
+}
+
+.seaborn .skill-list {
+    color: #3498db;  /* Same color as Seaborn circle */
+}
+.azure .skill-list {
+    color: #007bff;  /* Same color as Azure circle */
+}
 
         /* Skill Colors */
         .python .circle-fg {
@@ -177,40 +196,22 @@
             stroke-dashoffset: 47.1; /* 90% */
         }
 
-        .tensorflow .circle-fg {
-            stroke: #ff5722;
-            stroke-dasharray: 314;
-            stroke-dashoffset: 47.1; /* 85% */
-        }
 
         .sql .circle-fg {
             stroke: #2196f3;
             stroke-dasharray: 314;
             stroke-dashoffset: 47.1; /* 85% */
         }
-
+        .azure .circle-fg {
+            stroke: #007bff;
+            stroke-dasharray: 314;
+            stroke-dashoffset: 62.8; /* 82% */
+        }
+	    
         .excel .circle-fg {
             stroke: #2c3e50; 
             stroke-dasharray: 314;
             stroke-dashoffset: 62.8; /* 80% */
-        }
-
-        .opencv .circle-fg {
-            stroke: #2c3e50; 
-            stroke-dasharray: 314;
-            stroke-dashoffset: 62.8; /* 80% */
-        }
-
-        .matplotlib .circle-fg {
-            stroke: #9b59b6;
-            stroke-dasharray: 314;
-            stroke-dashoffset: 47.1; /* 85% */
-        }
-
-        .tableau .circle-fg {
-            stroke: #e91e63;
-            stroke-dasharray: 314;
-            stroke-dashoffset: 47.1; /* 85% */
         }
 
         .powerbi .circle-fg {
@@ -225,35 +226,9 @@
             stroke-dashoffset: 78.5; /* 75% */
         }
 
-        .gcp .circle-fg {
-            stroke: #00bcd4;
-            stroke-dasharray: 314;
-            stroke-dashoffset: 31.4; /* 90% */
-        }
+      
 
-        .aws .circle-fg {
-            stroke: #ff9800;
-            stroke-dasharray: 314;
-            stroke-dashoffset: 47.1; /* 85% */
-        }
-
-        .azure .circle-fg {
-            stroke: #007bff;
-            stroke-dasharray: 314;
-            stroke-dashoffset: 62.8; /* 80% */
-        }
-
-        .spark .circle-fg {
-            stroke: #ff5722;
-            stroke-dasharray: 314;
-            stroke-dashoffset: 62.8; /* 80% */
-        }
-
-        .hadoop .circle-fg {
-            stroke: #f39c12;
-            stroke-dasharray: 314;
-            stroke-dashoffset: 69.1; /* 78% */
-        }
+        
 	     </style>
 		<article id="skill" class="wrapper style2">
 				<div class="container">
