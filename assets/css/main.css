@@ -2038,15 +2038,18 @@ input, select, textarea {
 	#nav {
 		background-color: #282828;
 		text-align: center;
-		position: fixed;
+		position: sticky;
 		left: 0;
-		top: 5px;
+		top: 0;
 		width: 100%;
 		z-index: 10000;  /* Make sure it stays above everything */
 		/*z-index: 10000;*/
 		cursor: default;
 		height: 3.5em;
 		line-height: 3.5em;
+		display: flex;
+                align-items: center; /* Center the text vertically */
+                justify-content: center; /* Center the items horizontally */
 		
 	}
 
@@ -2059,6 +2062,7 @@ input, select, textarea {
 			margin-bottom: 0;
 			list-style: none;
 			padding-left: 0;
+			height: 100%; /* Ensures full navbar height is used */
 			
 		}
 
@@ -2072,6 +2076,9 @@ input, select, textarea {
                        font-size: 16px;
                        font-weight: bold;
                        padding: 10px 15px; /* Padding for better clickability */
+		       display: flex;
+                       align-items: center; /* Ensures text stays centered */
+                       height: 100%; /* Keeps it within navbar */
 			
                 }
                 
