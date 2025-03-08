@@ -239,7 +239,10 @@ input, select, textarea {
                 margin: 0;  /* Removes all margins */
                 padding: 0;  /* Ensures no internal spacing */
 	}
-
+        .container * {
+    padding: 0;
+    margin: 0;
+}
 		.container.medium {
 			width: 900px;
 		}
