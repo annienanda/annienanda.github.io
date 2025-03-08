@@ -231,9 +231,13 @@ input, select, textarea {
 /* Container */
 
 	.container {
-		margin: 0 auto;
+		/*margin: 0 auto;
 		max-width: calc(100% - 50px);
-		width: 1200px;
+		width: 1200px;*/
+		width: 100%;  /* Ensures the container spans the full width */
+                max-width: 100vw;  /* Prevents any extra spacing */
+                margin: 0;  /* Removes all margins */
+                padding: 0;  /* Ensures no internal spacing */
 	}
 
 		.container.medium {
