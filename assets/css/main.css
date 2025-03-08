@@ -2077,9 +2077,11 @@ input, select, textarea {
 			padding: 0 1.25em;
 		}
                         #nav a:hover {
-                                color: #ff6600 !important; /* Hover color */
+                                color: #fff !important; /* Hover color */
+				background: #ff6600;
                         }
-			/* #nav a:hover {
+			
+                        /* #nav a:hover {
 				color: #fff !important;
 				background: #383838;
 			}*/
