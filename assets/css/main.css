@@ -26,7 +26,7 @@ section, summary, time, mark, audio, video {
 	vertical-align: baseline;}
 
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+footer, header, hgroup, menu, , section {
 	display: block;}
 
 body {
@@ -2037,12 +2037,13 @@ input, select, textarea {
 
 	#nav {
 		background-color: #282828;
+		justify-content: center; /* Keeps nav items centered */
 		text-align: center;
 		position: fixed;
 		left: 0;
 		top: 0;
 		width: 100%;
-		z-index: 1000;  /* Make sure it stays above everything */
+		z-index: 10000;  /* Make sure it stays above everything */
 		/*z-index: 10000;*/
 		cursor: default;
 		height: 3.5em;
@@ -2423,11 +2424,15 @@ input, select, textarea {
                                 text-align: center;
 				flex-wrap: wrap;  /* Wrap items if needed */
                                 justify-content: center;
-                                gap: 10px; /* Reduce spacing */
+                                gap: 5px; /* Reduce spacing */
 				flex-direction: ; 
+				padding: 5px 0; /* Reduce top and bottom padding */
        
                         }
-
+                        nav ul li {
+        margin: 0; /* Remove extra margins */
+        padding: 0; /* Reset padding */
+    }
 				#nav a {
 					padding: 0 0.75em;
 					height: inherit;
@@ -2440,7 +2445,7 @@ input, select, textarea {
                                       /*padding: 12px;*/
                                       /*font-size: 18px;*/ /* Increase text size for touch screens */
 				      font-size: 12px; /* Slightly smaller text */
-                                      padding: 8px 12px;
+                                      padding: 5px 8px;
                         }
 
 					#nav a:hover {
