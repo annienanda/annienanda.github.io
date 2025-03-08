@@ -226,7 +226,31 @@
             stroke-dashoffset: 78.5; /* 75% */
         }
 
-      
+      @media screen and (max-width: 768px) {
+    .skill-section {
+        flex-direction: column; /* Stack skills vertically */
+        align-items: center;
+    }
+
+    .skill {
+        width: 140px; /* Reduce circle size */
+        height: 140px;
+        margin: 15px 0;
+    }
+
+    .skill-percentage {
+        top: -20px;  /* Adjust percentage text position */
+        font-size: 16px; /* Reduce font size */
+    }
+
+    .skill-list {
+        font-size: 12px; /* Reduce text size */
+    }
+
+    .circle-fg, .circle-bg {
+        stroke-width: 6; /* Reduce stroke width for better fit */
+    }
+}
 
         
 	     </style>
