@@ -2076,11 +2076,13 @@ input, select, textarea {
 			line-height: 2.5em;
 			padding: 0 1.25em;
 		}
-
-			#nav a:hover {
+                        #nav a:hover {
+                                color: #ff6600 !important; /* Hover color */
+                        }
+			/* #nav a:hover {
 				color: #fff !important;
 				background: #383838;
-			}
+			}*/
 
 			#nav a.active {
 				background: #484848;
