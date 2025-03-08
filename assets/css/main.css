@@ -2045,12 +2045,11 @@ input, select, textarea {
 	#nav {
 		background-color: #282828;
 		text-align: center;
-		position: sticky;
-		left: 0;
+		position: fixed;
 		top: 0;
-		width: 100%;
+                left: 0;
+                width: 100%;  /* Make it full-width */
 		z-index: 10000;  /* Make sure it stays above everything */
-		/*z-index: 10000;*/
 		cursor: default;
 		height: 3.5em;
 		line-height: 3.5em;
