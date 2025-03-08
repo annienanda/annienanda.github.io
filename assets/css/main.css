@@ -2412,25 +2412,27 @@ input, select, textarea {
 			}
 
 		/* Nav */
-
-			#nav {
+                        nav {
+        display: none; /* Hides the navbar on mobile */
+    }
+			/* #nav {
 				height: 44px;
 				line-height: 44px;
 				padding: 2px 0; /* Reduce padding for mobile */
-			}
-                        nav ul {
-                                flex-direction: row; /* Keep horizontal */
+			}*/
+                       /* nav ul {
+                                flex-direction: row; 
                                 text-align: center;
-				flex-wrap: wrap;  /* Wrap items if needed */
+				flex-wrap: wrap;  
                                 justify-content: center;
-                                gap: 2px; /* Reduce spacing */
+                                gap: 2px;
 				flex-direction: ; 
-				padding: 5px 0; /* Reduce top and bottom padding */
+				padding: 5px 0; 
        
                         }
                         nav ul li {
-        margin: 0; /* Remove extra margins */
-        padding: 0; /* Reset padding */
+        margin: 0; 
+        padding: 0; 
     }
 				#nav a {
 					padding: 0 0.75em;
@@ -2441,15 +2443,15 @@ input, select, textarea {
 		         nav ul li a {
                                       display: block;
                                       width: 100%;
-                                      /*padding: 12px;*/
-                                      /*font-size: 18px;*/ /* Increase text size for touch screens */
-				      font-size: 12px; /* Slightly smaller text */
+                                      padding: 12px;
+                                      font-size: 18px;
+				      font-size: 12px; 
                                       padding: 2px 5px;
                         }
 
 					#nav a:hover {
 						background-color: transparent;
-					}
+					}*/
 
 		/* Articles */
 
