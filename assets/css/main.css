@@ -2058,6 +2058,7 @@ input, select, textarea {
                 justify-content: center; /* Center the items horizontally */
 		margin: 0; /* Make sure there's no margin on top */
                 padding: 0; /* Make sure there's no padding on top */
+		box-sizing: border-box; /* Ensure the padding doesn't add extra space */
 		
 	}
 
@@ -2082,7 +2083,7 @@ input, select, textarea {
                 nav ul li a {
                        text-decoration: none;
                        color: #1e2a47 !important;
-                       font-size: 16px;
+                       font-size: 20px;
                        font-weight: bold;
                        padding: 10px 15px; /* Padding for better clickability */
 		       display: flex;
