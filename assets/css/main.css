@@ -29,6 +29,12 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, , section {
 	display: block;}
 
+/* Reset body and html margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
 body {
 	line-height: 1;
 }
@@ -2062,6 +2068,7 @@ input, select, textarea {
                         gap: 20px; /* Space between items */
                         list-style: none;
 			margin: 0;
+			padding: 0;
 			list-style: none;
 			padding-left: 0;
 			height: 100%; /* Ensures full navbar height is used */
