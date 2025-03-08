@@ -38,6 +38,13 @@
 	<body class="is-preload">
 
 		<!-- Nav -->
+		<style>
+			@media screen and (max-width: 736px) {
+			nav {
+        display: none; 
+    }
+			}
+			</style>
 		
 			<nav id="nav" style="background-color: #f0f0f0;">
 				
@@ -226,25 +233,25 @@
             stroke-dashoffset: 78.5; /* 75% */
         }
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 736px) {
     .skill-section {
         flex-direction: column; /* Stack skills vertically */
         align-items: center;
     }
 
     .skill {
-        width: 140px; /* Reduce circle size */
-        height: 140px;
+        width: 160px; /* Reduce circle size */
+        height: 160px;
         margin: 15px 0;
     }
 
     .skill-percentage {
         top: -20px;  /* Adjust percentage text position */
-        font-size: 16px; /* Reduce font size */
+        font-size: 14px; /* Reduce font size */
     }
 
     .skill-list {
-        font-size: 12px; /* Reduce text size */
+        font-size: 10px; /* Reduce text size */
     }
 
     .circle-fg, .circle-bg {
