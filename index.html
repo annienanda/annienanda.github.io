@@ -361,6 +361,9 @@
 								PhD, School of Computing</h4>
 								<p style="font-size: 14px;">2015-2021<br>
 								Cum. GPA: 90.56/100</p>
+								<h4 ">Rensselaer Polytechnic Institute (RPI), Troy, New York<br>
+								MS in Business Analytics, Lally School of Management</h4>
+								<p style="font-size: 14px;">2025-2026</p>
 								
 								
 							</section>
@@ -572,6 +575,37 @@
     skillPercentages[index].textContent = `${skillValue}%`;  // Display the percentage next to the bar
   });
 }); </script>
+		         <script>
+    function animateProgress() {
+        document.querySelectorAll('.skill').forEach(skill => {
+            let circle = skill.querySelector('.circle-fg');
+            let percentageText = skill.querySelector('.skill-percentage');
+            let initialPercent = parseInt(percentageText.textContent); 
+            let dashArray = 314; // Full circle (assuming r=50)
+            
+            let start = 0;
+            let direction = 1; // 1 for increasing, -1 for decreasing
+            
+            function update() {
+                start += direction;
+                
+                if (start >= initialPercent + 5 || start <= initialPercent - 5) {
+                    direction *= -1; // Reverse direction when hitting limits
+                }
+                
+                let dashOffset = dashArray - (dashArray * start / 100);
+                circle.style.strokeDashoffset = dashOffset;
+                percentageText.textContent = start + "%";
+                
+                requestAnimationFrame(update);
+            }
+            
+            update();
+        });
+    }
+
+    animateProgress(); // Start animation on page load
+</script>
 
 	</body>
 </html>
