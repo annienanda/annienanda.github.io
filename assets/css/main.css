@@ -2037,7 +2037,7 @@ input, select, textarea {
 
 	#nav {
 		background-color: #282828;
-		justify-content: center; /* Keeps nav items centered */
+		/*justify-content: center; */
 		text-align: center;
 		/*position: fixed;*/
 		left: 0;
@@ -2077,9 +2077,7 @@ input, select, textarea {
                        padding: 10px 15px; /* Padding for better clickability */
 			
                 }
-                body {
-    padding-top: 60px; /* Adjust based on navbar height */
-                }
+                
 
 		#nav a {
 			-moz-transition: background-color .2s ease-in-out;
