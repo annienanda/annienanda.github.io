@@ -2051,8 +2051,6 @@ input, select, textarea {
                 width: 100%;  /* Make it full-width */
 		z-index: 10000;  /* Make sure it stays above everything */
 		cursor: default;
-		height: 3.5em;
-		line-height: 3.5em;
 		display: flex;
                 align-items: center; /* Center the text vertically */
                 justify-content: center; /* Center the items horizontally */
