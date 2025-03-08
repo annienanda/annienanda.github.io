@@ -2040,7 +2040,7 @@ input, select, textarea {
 		text-align: center;
 		position: relative;
 		left: 0;
-		top: 10px;
+		top: 5px;
 		width: 100%;
 		z-index: 10000;  /* Make sure it stays above everything */
 		/*z-index: 10000;*/
