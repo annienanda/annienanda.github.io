@@ -2059,7 +2059,7 @@ input, select, textarea {
                         align-items: center;
                         gap: 20px; /* Space between items */
                         list-style: none;
-			margin-bottom: 0;
+			margin: 0;
 			list-style: none;
 			padding-left: 0;
 			height: 100%; /* Ensures full navbar height is used */
@@ -2415,45 +2415,8 @@ input, select, textarea {
 
 		/* Nav */
                         nav {
-        display: none; /* Hides the navbar on mobile */
+        display: none; 
     }
-			/* #nav {
-				height: 44px;
-				line-height: 44px;
-				padding: 2px 0; /* Reduce padding for mobile */
-			}*/
-                       /* nav ul {
-                                flex-direction: row; 
-                                text-align: center;
-				flex-wrap: wrap;  
-                                justify-content: center;
-                                gap: 2px;
-				flex-direction: ; 
-				padding: 5px 0; 
-       
-                        }
-                        nav ul li {
-        margin: 0; 
-        padding: 0; 
-    }
-				#nav a {
-					padding: 0 0.75em;
-					height: inherit;
-					line-height: inherit;
-					border-radius: 0;
-				}
-		         nav ul li a {
-                                      display: block;
-                                      width: 100%;
-                                      padding: 12px;
-                                      font-size: 18px;
-				      font-size: 12px; 
-                                      padding: 2px 5px;
-                        }
-
-					#nav a:hover {
-						background-color: transparent;
-					}*/
 
 		/* Articles */
 
