@@ -2048,8 +2048,8 @@ input, select, textarea {
 		cursor: default;
 		height: 3.5em;
 		line-height: 3.5em;
-                padding: 10px 0;
-                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+                /*padding: 10px 0;
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);*/
 	}
 
 		#nav ul {
@@ -2058,11 +2058,9 @@ input, select, textarea {
                         align-items: center;
                         gap: 20px; /* Space between items */
                         list-style: none;
-                        padding: 0;
-			margin: 0;
-			/*margin-bottom: 0;
+			margin-bottom: 0;
 			list-style: none;
-			padding-left: 0;*/
+			padding-left: 0;
 			
 		}
 
@@ -2417,14 +2415,14 @@ input, select, textarea {
 			#nav {
 				height: 44px;
 				line-height: 44px;
-				padding: 5px 0; /* Reduce padding for mobile */
+				padding: 2px 0; /* Reduce padding for mobile */
 			}
                         nav ul {
                                 flex-direction: row; /* Keep horizontal */
                                 text-align: center;
 				flex-wrap: wrap;  /* Wrap items if needed */
                                 justify-content: center;
-                                gap: 5px; /* Reduce spacing */
+                                gap: 2px; /* Reduce spacing */
 				flex-direction: ; 
 				padding: 5px 0; /* Reduce top and bottom padding */
        
@@ -2445,7 +2443,7 @@ input, select, textarea {
                                       /*padding: 12px;*/
                                       /*font-size: 18px;*/ /* Increase text size for touch screens */
 				      font-size: 12px; /* Slightly smaller text */
-                                      padding: 5px 8px;
+                                      padding: 2px 5px;
                         }
 
 					#nav a:hover {
