@@ -586,7 +586,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const minOffset = maxOffset * (1 - percentage / 100); // Target offset for actual percentage
 
             let progress = 0;
-            let step = 0.005; // Slower oscillation
+            let step = 0.01; // Controls animation speed
             let increasing = true;
 
             function updateProgress() {
@@ -601,7 +601,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 let animatedOffset = maxOffset - (progress * (maxOffset - minOffset));
                 circle.style.strokeDashoffset = animatedOffset;
 
-                setTimeout(updateProgress, 30); // Adjust delay for even slower effect
+                requestAnimationFrame(updateProgress);
             }
 
             updateProgress();
