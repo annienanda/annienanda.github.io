@@ -2042,11 +2042,13 @@ input, select, textarea {
 		left: 0;
 		top: 0;
 		width: 100%;
-		z-index: 10000;
+		z-index: 1000;  /* Make sure it stays above everything */
+		/*z-index: 10000;*/
 		cursor: default;
 		height: 3.5em;
 		line-height: 3.5em;
-		padding: 10px 0; /* Add vertical padding */
+                padding: 10px 0;
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 	}
 
 		#nav ul {
@@ -2056,9 +2058,11 @@ input, select, textarea {
                         gap: 20px; /* Space between items */
                         list-style: none;
                         padding: 0;
+			margin: 0;
 			/*margin-bottom: 0;
 			list-style: none;
 			padding-left: 0;*/
+			
 		}
 
 		#nav li {
@@ -2071,6 +2075,10 @@ input, select, textarea {
                        font-size: 16px;
                        font-weight: bold;
                        padding: 10px 15px; /* Padding for better clickability */
+			
+                }
+                body {
+    padding-top: 60px; /* Adjust based on navbar height */
                 }
 
 		#nav a {
@@ -2408,11 +2416,16 @@ input, select, textarea {
 			#nav {
 				height: 44px;
 				line-height: 44px;
+				padding: 5px 0; /* Reduce padding for mobile */
 			}
                         nav ul {
-                                flex-direction: column; /* Stack items vertically */
+                                flex-direction: row; /* Keep horizontal */
                                 text-align: center;
-                                gap: 10px;
+				flex-wrap: wrap;  /* Wrap items if needed */
+                                justify-content: center;
+                                gap: 10px; /* Reduce spacing */
+				flex-direction: ; 
+       
                         }
 
 				#nav a {
@@ -2424,8 +2437,10 @@ input, select, textarea {
 		         nav ul li a {
                                       display: block;
                                       width: 100%;
-                                      padding: 12px;
-                                      font-size: 18px; /* Increase text size for touch screens */
+                                      /*padding: 12px;*/
+                                      /*font-size: 18px;*/ /* Increase text size for touch screens */
+				      font-size: 14px; /* Slightly smaller text */
+                                      padding: 8px 12px;
                         }
 
 					#nav a:hover {
