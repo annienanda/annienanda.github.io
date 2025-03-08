@@ -2050,6 +2050,8 @@ input, select, textarea {
 		display: flex;
                 align-items: center; /* Center the text vertically */
                 justify-content: center; /* Center the items horizontally */
+		margin: 0; /* Make sure there's no margin on top */
+                padding: 0; /* Make sure there's no padding on top */
 		
 	}
 
