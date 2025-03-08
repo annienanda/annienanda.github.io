@@ -2046,18 +2046,32 @@ input, select, textarea {
 		cursor: default;
 		height: 3.5em;
 		line-height: 3.5em;
+		padding: 10px 0; /* Add vertical padding */
 	}
 
 		#nav ul {
-			margin-bottom: 0;
+			display: flex;
+                        justify-content: center; /* Center items */
+                        align-items: center;
+                        gap: 20px; /* Space between items */
+                        list-style: none;
+                        padding: 0;
+			/*margin-bottom: 0;
 			list-style: none;
-			padding-left: 0;
+			padding-left: 0;*/
 		}
 
 		#nav li {
 			display: inline-block;
 			padding-left: 0;
 		}
+                nav ul li a {
+                       text-decoration: none;
+                       color: #1e2a47 !important;
+                       font-size: 16px;
+                       font-weight: bold;
+                       padding: 10px 15px; /* Padding for better clickability */
+                }
 
 		#nav a {
 			-moz-transition: background-color .2s ease-in-out;
@@ -2395,6 +2409,11 @@ input, select, textarea {
 				height: 44px;
 				line-height: 44px;
 			}
+                        nav ul {
+                                flex-direction: column; /* Stack items vertically */
+                                text-align: center;
+                                gap: 10px;
+                        }
 
 				#nav a {
 					padding: 0 0.75em;
@@ -2402,6 +2421,12 @@ input, select, textarea {
 					line-height: inherit;
 					border-radius: 0;
 				}
+		         nav ul li a {
+                                      display: block;
+                                      width: 100%;
+                                      padding: 12px;
+                                      font-size: 18px; /* Increase text size for touch screens */
+                        }
 
 					#nav a:hover {
 						background-color: transparent;
