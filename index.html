@@ -576,32 +576,34 @@
   });
 }); </script>
 		         <script>
-    
-document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function () {
     function animateProgress() {
         document.querySelectorAll(".skill").forEach(skill => {
             const percentage = parseInt(skill.querySelector(".skill-percentage").textContent, 10);
             const circle = skill.querySelector(".circle-fg");
-            const maxOffset = 314; // Full circle stroke-dasharray
-            const minOffset = maxOffset * (1 - percentage / 100); // Target offset for actual percentage
+
+            const fullOffset = 314; // Stroke-dasharray for a full circle
+            const minOffset = fullOffset * (1 - percentage / 100); // Actual skill level offset
+            const maxOffset = fullOffset * 0.05; // Small buffer for oscillation
 
             let progress = 0;
-            let step = 0.01; // Controls animation speed
+            let step = 0.002; // Slow oscillation
             let increasing = true;
 
             function updateProgress() {
                 if (increasing) {
                     progress += step;
-                    if (progress >= 1) increasing = false;
+                    if (progress >= 1) increasing = false;  
                 } else {
                     progress -= step;
-                    if (progress <= 0) increasing = true;
+                    if (progress <= 0) increasing = true;  
                 }
 
-                let animatedOffset = maxOffset - (progress * (maxOffset - minOffset));
+                // Ensure it oscillates between the actual percentage range
+                let animatedOffset = minOffset + (progress * (maxOffset - minOffset));
                 circle.style.strokeDashoffset = animatedOffset;
 
-                requestAnimationFrame(updateProgress);
+                requestAnimationFrame(updateProgress); // Smoother animation
             }
 
             updateProgress();
