@@ -234,6 +234,8 @@ input, select, textarea {
 		margin: 0 auto;
 		max-width: calc(100% - 50px);
 		width: 1200px;
+                padding: 0;  /* Removes extra spacing */
+                text-align: center;  /* Ensures text inside is centered */
 		
 	}
 	.container.medium {
@@ -281,6 +283,7 @@ input, select, textarea {
 			.container {
 				width: 100%;
 				max-width: calc(100% - 30px);
+				padding: 0 10px; /* Small padding to prevent text from touching edges */
 			}
 
 				.container.medium {
